@@ -1,0 +1,44 @@
+.page {
+	width: 1282px;
+	margin: 0 auto;
+	font-family: "Microsoft YaHei";
+}
+
+nav {
+	display: block;
+	height: 60px;
+	background-color: #333;
+}
+
+.logo {
+	display: inline;
+	margin-top: 10px;
+	margin-left: 40px;
+	width: 120px;
+	height: 38px;
+}
+
+nav ul {
+	float: right;
+	margin-top: 20px;
+}
+
+nav li {
+	float: left;
+	/*margin-right: 20px;*/
+	width: 80px;
+	padding-left: 10px;
+	background: url('../img/task_2/li.gif') no-repeat 0 9px;
+}
+
+nav li a {
+	color: #fff;
+}
+
+nav li a:hover {
+	text-decoration: none;
+	color: #8c9594;
+}
+
+
+
