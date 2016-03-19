@@ -2,10 +2,17 @@
 	width: 1282px;
 	margin: 0 auto;
 	font-family: "Microsoft YaHei";
+	background-color: #dedede;
+	font-size: 12px;
+}
+
+/*h1.h2.h3*/
+h1, h2, h3 {
+	letter-spacing: 1px;
 }
 
 nav {
-	display: block;
+	width: 1281px;
 	height: 60px;
 	background-color: #333;
 }
@@ -21,13 +28,12 @@ nav {
 nav ul {
 	float: right;
 	margin-top: 20px;
+	margin-right: 13px;
 }
 
 nav li {
 	float: left;
 	width: 80px;
-	padding-left: 10px;
-	background: url('../img/task_2/li.gif') no-repeat 0 9px;
 }
 
 nav li a {
@@ -39,5 +45,160 @@ nav li a:hover {
 	color: #8c9594;
 }
 
+article, aside {
+	margin: 20px auto;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	width: 1198px;
+	background-color: #fff;
+	border: 1px solid #cbcbcb;
+	-webkit-box-shadow:2px 2px 2px #848484;
+    -moz-box-shadow:2px 2px 2px #848484;
+	box-shadow:2px 2px 2px #848484;
+}
 
+h1 {
+	margin-top: 39px;
+	font-size: 21px;
+}
+
+h2 {
+	margin-top: 16px;
+	font-size: 17px;
+	color: #5d5564;
+}
+
+header {
+	/*margin-top: 39px;*/
+}
+
+header p {
+	margin-top: 11px;
+	color: #6e6463;
+}
+
+time {
+	display: inline-block;
+}
+
+section p {
+	margin: 21px auto;
+	text-indent: 2em;
+	font-size: 14px;
+}
+
+img {
+	height: 243px;
+}
+
+section dl {
+	margin: 20px 21px; 
+	font-size: 14px;
+}
+
+section dd {
+	margin-bottom: 6px;
+}
+
+figure {
+	margin: 16px 40px;
+	width: 120px;
+	height: 124px;
+	border: 1px solid #cecece;
+	text-align: center;
+	line-height: 33px;
+}
+
+figure img {
+	width: 100px;
+	height: 80px;
+}
+
+section ol {
+	margin: 21px 41px;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+section ol li {
+	margin-top: 5px;
+}
+
+table {
+	width: 1198px;
+	border: 1px solid #cecece;
+	text-indent: 10px;
+}
+
+tr {
+	height: 23px;
+}
+
+td {
+	border: 1px solid #cecece;
+}
+
+thead {
+	background: #333;
+	color: #fff;
+	text-align: left;
+}
+
+tfoot {
+	font-weight: bold;
+	background: #cccccc;
+}
+
+aside {
+	width: 1177px;
+	margin-left: 21px;
+}
+
+h3 {
+	margin-top: 20px;
+	padding-left: 10px;
+	height: 38px;
+	border-left: 3px solid #cdcdcd;
+	line-height: 38px;
+	font-size: 15px;
+}
+
+form ul {
+	display: inline-block;
+	margin-top: 22px;
+	width: 100%;
+	height: 430px;
+	list-style-type: none;
+}
+
+form li {
+	float: left;
+}
+.left-bar {
+	width: 367px;
+	text-align: right;
+}
+
+.right-bar {
+	width: 736px;
+}
+.inp {
+	display: block;
+	width: 127px;
+	height: 20px;
+	border: 1px solid #ccc;
+}
+
+.btn {
+	display: inline-block;
+}
+
+footer {
+	height: 70px;
+	background: #000;
+	color: #fff;
+	line-height: 70px;
+	text-align: center;
+}
 
