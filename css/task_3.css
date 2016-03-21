@@ -1,0 +1,56 @@
+html {
+	padding: 20px;
+}
+.page {
+	display: inline-block;
+	margin: 0 20px 0 auto;
+	padding: 20px;
+	width: 100%;
+	min-width: 680px;
+	background: #eee;
+	border: 1px solid #999;
+}
+
+.list {
+	padding: 20px;
+	background: #fff;
+	border: 1px solid #999;
+}
+
+.left {
+	float: left;
+	width: 200px;
+}
+
+.title {
+	position: relative;
+	left: 80px;
+	top: -82px;
+	display: inline-block;
+	width: 118px;
+	text-align: center;
+}
+
+img {
+	width: 80px;
+	height: 80px;
+	border: 1px solid #999;
+}
+
+.middle {
+	margin: 0 183px 0 263px;
+}
+
+.right {
+	float: right;
+	width: 120px;
+	text-align: center;
+}
+
+.wrap-img {
+	margin-bottom: 20px;
+}
+
+.img-last {
+	margin-bottom: 0;
+}
