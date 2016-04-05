@@ -3,24 +3,32 @@ add.onclick = function bindClickEvent() {
     var result = verify();
     if (result) {
         addRow();
-    };
-}
+    }
+};
 
 function verify() {
     var result = false;
     var city = document.getElementById('aqi-city-input');
     var value = document.getElementById('aqi-value-input');
     if (city.value == '' && value.value == '') {
-        alert('3');
+        alert('请输入内容');
     }
     else if (city.value == '') {
-        alert('2');
+        alert('请输入城市名称');
     }
     else if (value.value == '') {
-        alert('1');
+        alert('请输入空气质量指数');
     }
     else {
-        result = true;
+        if(!value.value.match(new RegExp("^[-]{0,1}[0-9]{1,}$"))) {
+            alert('输入空气质量指数应为整数');
+        }
+        else if(!CheckEmpName(city.value)) {
+            alert('应输入中文或英文城市名称');
+        }
+        else {
+            result = true;
+        }
     }
     return result;
 }
@@ -43,10 +51,25 @@ function bindDeleteEvent() {
     var tables = document.getElementsByTagName('table')[0];
     var btn = tables.getElementsByTagName('button');
     for (var i = 0; i < btn.length; i++) {
-        btn[i].setAttribute('onclick','deletEvent(this)');
-    };
+        btn[i].setAttribute('onclick','deleteEvent(this)');
+    }
 }
 
-function deletEvent(ev) {
+function deleteEvent(ev) {
     ev.parentNode.parentNode.remove();
+}
+
+function CheckEmpName(EmpName)
+{
+    var CheckTestName = "^[a-zA-Z\u4e00-\u9fa5]+$";
+    var re = new RegExp(CheckTestName);
+    var result = false;
+    if(EmpName.length!=0)
+    {
+        if(re.test(EmpName))
+        {
+            result = true;
+        }
+    }
+    return result;
 }
