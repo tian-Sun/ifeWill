@@ -25,16 +25,17 @@ function sortChart () {
 		titleValue[i] = size[i].title;
 	}
 	var l = size.length - 1;
-	for (var k = l; k > 0; k--) {
+	for (var k = l; k > 0; ) {
 		if (parseInt(titleValue[k]) < parseInt(titleValue[k-1])) {
 			var temp = size[k].title;
 			size[k].title = size[k-1].title;
 			size[k-1].title = temp;
+			// alert();
 			// var beginTime=new Date().getTime();
 			// while(new Date().getTime()  < beginTime + 1000) {
 			//    continue;
 			// }
-			// var t=setTimeout("console.log('1');",5000)
+			// var t=setTimeout("k++;",5000)
 			// alert();
 			// var ALERT_ON = true; // 可通过这个属性开关alert消息框
 			// var _alert = window.alert;
@@ -43,12 +44,12 @@ function sortChart () {
 			//         _alert.hide();
 			//     }
 			// }
-// 			var a = function test()
-// {
-// showModelessDialog("javascript:alert();window.close();","","status:no;resizable:no;help:no;dialogHeight:30px;dialogWidth:40px;");
-// setTimeout("location.reload();",1000);
+			// 			var a = function test()
+			// {
+			// showModelessDialog("javascript:alert();window.close();","","status:no;resizable:no;help:no;dialogHeight:30px;dialogWidth:40px;");
+			// setTimeout("location.reload();",1000);
 
-// }
+			// }
 		}
 	}
 	initChart();

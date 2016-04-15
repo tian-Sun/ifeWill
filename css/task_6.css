@@ -1,0 +1,101 @@
+.page {
+	width: 980px;
+	height: 1386px;
+	margin: 0 auto;
+}
+
+.header {
+	width: 892px;
+	height: 61px;
+	border-bottom: 2px solid #938e8c;
+	font-family: 'SimHei';
+	font-size: 12px;
+}
+
+.red-block {
+	float: left;
+	width: 110px;
+	height: 61px;
+	background-color: #d45d5c;
+}
+
+.red-block a {
+	margin-top: 46px;
+	margin-left: 7px;
+	display: inline-block;
+	color: #fff;
+	text-decoration: none;
+}
+
+.date {
+	float: right;
+	margin-top: 46px;
+	color: #d45d5c;
+}
+
+.main {
+	margin-top: 34px;
+}
+
+.important {
+	display: inline-block;
+	float: left;
+	height: 301px;
+}
+
+.carousel {
+	position: relative;
+}
+
+.carousel img {
+	width: 641px;
+	height: 301px;
+}
+
+.mask {
+	position: absolute;
+	top: 0;
+	width: 191px;
+	height: 301px;
+	z-index: 1;
+	opacity: 0.5;
+}
+
+.left-mask {
+	left: 0;
+	background-color: #a0c5ac;
+}
+
+.right-mask {
+	left: 450px;
+	background-color: #e5babf;
+}
+
+.infor {
+	margin-left: 48px;
+	width: 203px;
+	border-top: 2px solid #cc8091;
+	font-family: 'Microsoft YaHei';
+}
+
+.title {
+	font-size: 24px;
+	color: #000;
+	line-height: 40px;
+	text-decoration: underline;
+	font-variant: small-caps;
+}
+
+.title-msg {
+	width: 200px;
+	font-size: 12px;
+	font-family: 'KaiTi';
+	font-style: italic;
+	line-height: 10px;
+}
+
+.click-num {
+	font-size: 116px;
+	color: #75b86b;
+	font-style: italic;
+}
