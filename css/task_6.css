@@ -1,7 +1,8 @@
 .page {
 	width: 980px;
-	height: 1386px;
+	/*height: 1386px;*/
 	margin: 0 auto;
+	font-family: 'Microsoft YaHei';
 }
 
 .header {
@@ -35,10 +36,10 @@
 
 .main {
 	margin-top: 34px;
+	height: 303px;
 }
 
 .important {
-	display: inline-block;
 	float: left;
 	height: 301px;
 }
@@ -75,7 +76,6 @@
 	margin-left: 48px;
 	width: 203px;
 	border-top: 2px solid #cc8091;
-	font-family: 'Microsoft YaHei';
 }
 
 .title {
@@ -97,5 +97,116 @@
 .click-num {
 	font-size: 116px;
 	color: #75b86b;
-	font-style: italic;
+	margin-left: -20px;
+}
+.title-num {
+	font-size: 55px;
+	color: #cc8091;
+	width: 120px;
+}
+
+.title-num-msg {
+	display: inline-block;
+	margin-top: -5px;
+	color: #cc8091;
+}
+
+.title-num-msg li {
+	list-style: none;
+}
+
+.min-title {
+	font-size: 21px;
+}
+
+.min-msg {
+	font-size: 12px;
+}
+
+.about {
+	margin-top: 40px;
+	margin-bottom: 73px;
+	height: 168px;
+}
+
+.about li {
+	float: left;
+	margin-right: 28px;
+	width: 228px;
+	height: 168px;
+	list-style: none;
+	overflow: hidden;
+}
+
+.about a {
+	outline: normal;
+	text-decoration: underline;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.what {
+	color: #418c59;
+}
+
+.when {
+	color: #d2994f;
+}
+
+.how {
+	color: #cc7680;
+}
+
+.about p {
+	font-size: 12px;
+}
+
+/*line-height设置*/
+.lh16 {
+	line-height: 16px;
+}
+
+.lh21 {
+	line-height: 21px;
+	font-family: 'SimSun';
+}
+
+.per-top {
+	margin-top: 19px;
+}
+
+.about i {
+	margin-left: 4px;
+	color: #cd4a48;
+}
+
+.article {
+	float: left;
+	margin-right: 20px;
+	width: 415px;
+}
+
+.head {
+	color: #11456b;
+}
+
+.head h1 {
+	display: inline-block;
+	font-size: 42px;
+	font-family: 'SimHei';
+	line-height: 41px;
+	
+}
+
+.head i {
+	margin-left: -14px;
+	margin-right: 20px;
+	font-size: 72px;
+	color: #f5e327;
+}
+
+.head h2 {
+	font-size: 33px;
+	font-family: 'SimHei';
+	line-height: 31px;
 }
