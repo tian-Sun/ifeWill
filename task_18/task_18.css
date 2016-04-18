@@ -5,13 +5,12 @@
 
 .queue {
 	margin-left: -6px;
-	margin-top: 10px;
 }
 
 .queue span {
 	display: inline-block;
 	float: left;
-	margin-left: 10px;
+	margin: 10px;
 	width: 42px;
 	height: 42px;
 	background-color: red;
