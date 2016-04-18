@@ -1,0 +1,19 @@
+.page {
+	margin: 0 auto;
+	width: 900px;
+}
+
+.queue {
+	margin-left: -6px;
+}
+
+.queue span {
+	display: inline-block;
+	margin: 10px;
+	padding: 10px;
+	background-color: red;
+	color: #fff;
+	font-size: 18px;
+	line-height: 42px;
+	text-align: center;
+}
