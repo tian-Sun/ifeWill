@@ -1,3 +1,4 @@
+/*兼容*/
 function addEventHandler(ele, event, hanlder) {
     if (ele.addEventListener) {
         ele.addEventListener(event, hanlder, false);
@@ -18,42 +19,32 @@ function initChart() {
 	}
 }
 
-function sortChart () {
-	var size = document.getElementsByTagName('span');
-	var titleValue = [];
-	for (var i = 0; i < size.length; i++) {
-		titleValue[i] = size[i].title;
+function initCharts() {
+	var height = queue.childNodes;
+	for (var i = 0; i < height.length; i++) {
+		var hs = height[i].title;
+		height[i].style.height = hs + 'px';
 	}
-	var l = size.length - 1;
-	for (var k = l; k > 0; ) {
-		if (parseInt(titleValue[k]) < parseInt(titleValue[k-1])) {
-			var temp = size[k].title;
-			size[k].title = size[k-1].title;
-			size[k-1].title = temp;
-			// alert();
-			// var beginTime=new Date().getTime();
-			// while(new Date().getTime()  < beginTime + 1000) {
-			//    continue;
-			// }
-			// var t=setTimeout("k++;",5000)
-			// alert();
-			// var ALERT_ON = true; // 可通过这个属性开关alert消息框
-			// var _alert = window.alert;
-			// window.alert = function(msg) {
-			//     if (ALERT_ON) {
-			//         _alert.hide();
-			//     }
-			// }
-			// 			var a = function test()
-			// {
-			// showModelessDialog("javascript:alert();window.close();","","status:no;resizable:no;help:no;dialogHeight:30px;dialogWidth:40px;");
-			// setTimeout("location.reload();",1000);
+}
 
-			// }
+function sortChart () {
+	var numbers = document.getElementsByTagName('span');
+	var titleValue = [];
+	for (var i = 0; i < numbers.length; i++) {
+		titleValue[i] = numbers[i].title;
+	}
+	var l = numbers.length - 1;
+	for (var k = l; k > 0; k--) {
+		if (parseInt(titleValue[k]) < parseInt(titleValue[k-1])) {
+			var temp = numbers[k].title;
+			numbers[k].title = numbers[k-1].title;
+			initCharts();
+			numbers[k-1].title = temp;
+			console.log(k+1 + '与' + k + '换位');
+			setTimeout('sortChart()',500);
 		}
 	}
-	initChart();
-	sortChart();
+	
 }
 
 function size(num) {
