@@ -9,28 +9,24 @@ function addEventHandler(ele, event, hanlder) {
 }
 
 function leftEnter () {
-	if (text.value) {
-		var newItem = document.createElement("span");
-		// var textnode = document.createTextNode(text.value);
-		// newItem.appendChild(textnode);
-		// queue.insertBefore(newItem,queue.childNodes[0]);
-        var content = text.value.toString();
-        var a = content.replace(//g,'</span><span>');
-        // a = content.replace(/2/g,'3');
-        // a = content.replace('，','</span><span>');
-        // a = content.replace('、','</span><span>');
-        // a = content.replace(/\s+/g,'</span><span>');
-        // a = content.replace(/[\n\r]/g,'</span><span>');
-        // a = content.replace(/[\r\n]/g,'</span><span>');
-        console.log(a);
-        var textnode = document.createTextNode(a);
-        newItem.appendChild(textnode);
-        queue.insertBefore(newItem,queue.childNodes[0]);
-	}
+    if (text.value) {
+        var temp = text.value;
+        var content = temp.split(/\W/);
+        for (var i = 0; i < content.length; i++) {
+            var newItem = document.createElement("span");
+            var textnode = document.createTextNode(content[i]);
+            newItem.appendChild(textnode);
+            queue.insertBefore(newItem,queue.childNodes[0]);
+        }
+    }
 }
 function rightEnter () {
 	if (text.value) {
-		queue.innerHTML += '<span>' + text.value + '</span>';
+        var temp = text.value;
+        var content = temp.split(/\W/);
+        for (var i = 0; i < content.length; i++) {
+            queue.innerHTML += '<span>' + content[i] + '</span>';
+        }
 	}
 }
 function leftOut () {
